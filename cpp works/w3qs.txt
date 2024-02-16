@@ -1,0 +1,15 @@
+w3 q1:
+ Complex_num(int _x=0, int _y=0) : x(_x), y(_y) { } //LINE-1
+ Complex_num(const Complex_num& c) : x(c.x), y(c.y) {} //LINE-2
+ return Complex_num(x+c.x, y+c.y); //LINE-3
+
+w3 q2:
+
+ CharArray(int n) : size(n), arr(new char[n]) {} //LINE-1
+
+~CharArray(){ delete[] arr; } //LINE-2
+
+w3 q3:
+mutable int z; //LINE-1
+void change() const { z = x * y; } //LINE-2
+void print() const  { //LINE-3
