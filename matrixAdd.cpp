@@ -79,8 +79,9 @@ void matrixSubtract(){
     matrixPrint(c);
 }
 int main(){
-    int ch;
-    cout<<"====================\n1. Matrix Addition.\n2. Matrix Subtraction.\n3. Transpose of matrix.\n4. Check Symmetric or not.\n5. Exit.\n====================\n";
+  int ch;
+  while(true){
+    cout<<"=========================\n1. Matrix Addition.\n2. Matrix Subtraction.\n3. Transpose of matrix.\n4. Check Symmetric or not.\n5. Exit.\n=========================\n";
     cin>>ch;
     Arr a, t;
 
@@ -105,7 +106,8 @@ int main(){
     case 5:
         return 0;
     default:
-        cout<<"Enter valid choice...";
+        cout<<"Enter valid choice..."<<endl;
         break;
     }
+  }
 }
